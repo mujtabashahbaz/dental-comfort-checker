@@ -228,7 +228,6 @@ st.title("🦷 Ai Dentify's Dental Comfort Checker")
 st.markdown("""
 - A helpful tool that estimates your dental anxiety level using your history and questionnaire responses.
 - It also suggests personalized techniques to manage anxiety, making your dental visit more comfortable.
-- **Note:** Our previous risk predictor wasn't working properly. Please use the updated Dental Comfort Checker here: [https://bit.ly/ai-dentify-dental-comfort-checker](https://bit.ly/ai-dentify-dental-comfort-checker)
 """)
 st.header("👤 Patient Information")
 
