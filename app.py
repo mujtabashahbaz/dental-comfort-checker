@@ -11,8 +11,7 @@ from sklearn.preprocessing import LabelEncoder
 # Step 1: Set Page Configuration
 # --------------------------
 
-# Set the page configuration as the very first Streamlit command
-st.set_page_config(page_title="Dental Anxiety Predictor", layout="centered")
+st.set_page_config(page_title="Ai Dentify's Dental Comfort Checker", layout="centered")
 
 # --------------------------
 # Step 2: Data Preparation
@@ -31,7 +30,7 @@ def create_dataset():
     past_behavior = np.random.choice(['Cooperative', 'Anxious', 'Fearful'], num_samples)
 
     # Generate questionnaire_score based on some logic
-    # For simulation, let's assume higher questionnaire_score indicates higher anxiety
+    # For simulation, higher questionnaire_score indicates higher anxiety
     questionnaire_score = np.random.randint(0, 41, num_samples)  # 0 to 40
 
     # Define anxiety_level based on questionnaire_score
@@ -97,7 +96,7 @@ def train_model():
         clf = RandomForestClassifier(n_estimators=100, random_state=42)
         clf.fit(X_train, y_train)
 
-        # Evaluate the model
+        # Evaluate the model (optional)
         accuracy = clf.score(X_test, y_test)
         # Removed the accuracy display to avoid showing it in the app
         # st.write(f"### 🏆 Model Trained with Accuracy: {accuracy * 100:.2f}%")
